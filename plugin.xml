@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="org.aurigo.mobile.plugins.FileViewer" version="1.0.0" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+  <name>FileViewer</name>
+  <description>Aurigo File Viewer Plugin</description>
+  <js-module name="FileViewer" src="www/FileViewer.js">
+    <clobbers target="aurigo.plugins.fileViewer" />
+  </js-module>
+  <platform name="android">
+    <config-file parent="/*" target="res/xml/config.xml">
+      <feature name="FileViewer">
+        <param name="android-package" value="org.aurigo.mobile.plugins.FileViewer.FileViewer" />
+      </feature>
+    </config-file>
+    <config-file parent="/*" target="AndroidManifest.xml" />
+    <source-file src="src/android/FileViewer.java" target-dir="src/org/aurigo/mobile/plugins/FileViewer/FileViewer" />
+  </platform>
+  <platform name="ios">
+    <config-file parent="/*" target="config.xml">
+      <feature name="FileViewer">
+        <param name="ios-package" value="FileViewer" />
+      </feature>
+    </config-file>
+    <source-file src="src/ios/FileViewer.m" />
+  </platform>
+  <platform name="wp8">
+    <config-file parent="/*" target="config.xml">
+      <feature name="FileViewer">
+        <param name="wp8-package" value="FileViewer" />
+      </feature>
+    </config-file>
+    <source-file src="src/wp8/FileViewer.cs" />
+  </platform>
+</plugin>
