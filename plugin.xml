@@ -2,7 +2,7 @@
 <plugin id="org.aurigo.mobile.plugins.FileViewer" version="1.0.0" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
   <name>FileViewer</name>
   <description>Aurigo File Viewer Plugin</description>
-  <license>Apache 2.0 License</license>
+  <license>Apache 2.0</license>
   <js-module name="FileViewer" src="www/FileViewer.js">
     <clobbers target="aurigo.plugins.fileViewer" />
   </js-module>
